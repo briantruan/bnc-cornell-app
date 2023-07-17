@@ -15,6 +15,8 @@ export async function generateStaticParams() {
   return guides;
 }
 
+export const revalidate = 60
+
 export default async function Page({ params }) {
   const guide = await cachedClient(postQuery, params);
 
