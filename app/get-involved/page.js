@@ -1,5 +1,9 @@
 import Image from "next/image";
 
+export const metadata = {
+  title: "Get Involved"
+}
+
 export default function GetInvolved() {
   return (
     <main>

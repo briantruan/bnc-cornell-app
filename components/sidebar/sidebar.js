@@ -1,10 +1,10 @@
 import Link from "next/link";
 import SidebarButton from "./sidebar-button";
 import SidebarOption from "./sidebar-option";
-import { AlertBadge } from "./badges";
+import { AlertBadge } from "../badges/badges";
 import { Suspense } from "react";
 import Loading from "@/app/loading";
-import AnnouncementSidebarItem from "./announcementListItem";
+import AnnouncementSidebarItem from "../announcements/announcementListItem";
 
 export default function Sidebar({children}) {
   return (

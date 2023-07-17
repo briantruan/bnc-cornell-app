@@ -6,7 +6,7 @@ import { SanityDocument } from "sanity";
 import { PortableText } from "@portabletext/react";
 import { client } from "@/sanity/lib/client";
 import Link from "next/link";
-import CopyButton from "./copyButton";
+import CopyButton from "../misc/copyButton";
 
 const builder = imageUrlBuilder(client);
 

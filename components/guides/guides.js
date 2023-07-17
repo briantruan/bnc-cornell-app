@@ -1,6 +1,6 @@
 import Link from "next/link"
-import { UpdatedBadge } from "./badges"
-import { CategoryBadge } from "./badgeHandler"
+import { UpdatedBadge } from "../badges/badges"
+import { CategoryBadge } from "../badges/badgeHandler"
 
 export default function Guides({ guides = [] }) {
 
