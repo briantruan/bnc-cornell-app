@@ -1,3 +1,5 @@
+"use client"
+
 /**
  * This configuration is used to for the Sanity Studio that’s mounted on the `/app/studio/[[...index]]/page.jsx` route
  */
@@ -11,6 +13,7 @@ import {apiVersion, dataset, projectId} from './sanity/env'
 import {schema} from './sanity/schema'
 
 export default defineConfig({
+  title: "Cornell Basic Needs",
   basePath: '/studio',
   projectId,
   dataset,

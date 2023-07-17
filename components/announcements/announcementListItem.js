@@ -2,7 +2,7 @@
 import useSWR, { SWRConfig } from "swr";
 
 import AnnouncementModal from "./announcementModal";
-import { AlertBadge } from "./badges";
+import { AlertBadge } from "../badges/badges";
 import { cachedClient } from "@/sanity/lib/client";
 import { announcementQuery } from "@/sanity/lib/queries";
 
