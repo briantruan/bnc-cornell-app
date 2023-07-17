@@ -16,7 +16,7 @@ export default function GetInvolved() {
               </h1>
               <p className="py-4">
                 Follow us on Instagram and join our GroupMe chat for announcements by accessing the Sidebar. 
-                We offer "pop-up shops" around campus throughout the semesters for your basic needs!
+                We offer &quot;pop-up shops&quot; around campus throughout the semesters for your basic needs!
               </p>
               <p className="py-4">
                 Our in-person meetings will resume in the Fall 2023 semester. Check our announcements for 

@@ -1,6 +1,7 @@
 import { cachedClient } from "@/sanity/lib/client";
 import { announcementQuery } from "@/sanity/lib/queries";
 import { PortableText } from "@portabletext/react";
+import Link from "next/link";
 
 export default async function AnnouncementModal({ announcement }) {
   {
