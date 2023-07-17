@@ -1,6 +1,7 @@
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 import Sidebar from '@/components/sidebar/sidebar'
+import { Analytics } from '@vercel/analytics/react'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <div>
           <Sidebar children={children}/>
+          <Analytics />
         </div>
       </body>
     </html>
