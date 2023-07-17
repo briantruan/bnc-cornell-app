@@ -10,8 +10,7 @@ export const metadata = {
 
 // Prepare Next.js to know which routes already exist
 export async function generateStaticParams() {
-  const revalidate = 60
-  const guides = await cachedClient(postPathsQuery, {next: {revalidate}});
+  const guides = await cachedClient(postPathsQuery, {next: { revalidate: 60 }});
 
   return guides;
 }

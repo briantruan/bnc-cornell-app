@@ -7,7 +7,7 @@ export const metadata = {
 }
 
 export default async function GuidesPage() {
-    const response = await cachedClient(postsQuery)
+    const response = await cachedClient(postsQuery, {next: { revalidate: 60 }})
 
     return <Guides guides={response} />
 }
