@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={montserrat.className}>
         <div>
-          <Sidebar children={children}/> // eslint-disable-line
+          <Sidebar children={children}/>
         </div>
       </body>
     </html>
