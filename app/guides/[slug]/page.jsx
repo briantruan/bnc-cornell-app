@@ -5,8 +5,8 @@ import { postPathsQuery, postQuery } from "@/sanity/lib/queries";
 import { cachedClient } from "@/sanity/lib/client";
 
 export const metadata = {
-  title: "Guide Viewer"
-}
+  title: "Guide Viewer",
+};
 
 // Prepare Next.js to know which routes already exist
 export async function generateStaticParams() {

@@ -1,12 +1,12 @@
 import SanityStudio from "@/components/studio/sanityStudio";
-import config from "../../../sanity.config"
+import config from "../../../sanity.config";
 
 export const metadata = {
-  title: "Studio Editor"
-}
+  title: "Studio Editor",
+};
 
 export default function StudioPage() {
-  const configuration = config
+  const configuration = config;
 
-  return <SanityStudio config={configuration}/>
+  return <SanityStudio config={configuration} />;
 }

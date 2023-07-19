@@ -7,6 +7,7 @@ import { PortableText } from "@portabletext/react";
 import { client } from "@/sanity/lib/client";
 import Link from "next/link";
 import CopyButton from "../misc/copyButton";
+import { CategoryBadge } from "../badges/badgeHandler";
 
 const builder = imageUrlBuilder(client);
 
@@ -44,7 +45,7 @@ export default function Guide({ guide }) {
         <main>
             <div className="hero min-h-screen w-full" style={{ backgroundImage: "url(/background.jpeg)" }} >
                 <div className="hero-overlay bg-opacity-75"></div>
-                <div className="hero-content px-8 flex-col lg:flex-row lg:space-x-4">
+                <div className="hero-content px-8 pb-20 md:pb-0 flex-col lg:flex-row lg:space-x-4">
                     <div className="flex flex-col items-center w-6/12">
                         <div>
                             {guide?.mainImage ? (
@@ -65,8 +66,14 @@ export default function Guide({ guide }) {
                         <div>
                             <p className="text-center pb-4">Updated {new Date(guide.publishedAt).toDateString()}</p>
                         </div>
-                        <div>
-                            <CopyButton />
+                        <div className="flex items-center space-x-4">
+                            <div>
+                                <CategoryBadge category={guide.category} />
+                            </div>
+                            <div>
+                                <CopyButton />
+                            </div>
+                            
                         </div>
                     </div>
                     <div>
