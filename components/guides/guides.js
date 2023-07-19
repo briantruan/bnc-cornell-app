@@ -19,7 +19,20 @@ export default function Guides({ guides = [] }) {
             <h1 className="text-4xl uppercase font-bold">Guides</h1>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
+          <div>
+            <p>
+              During the pre-production release period, 1 - 2 new guides will be
+              released weekly.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Guides are now sorted by category, then by title. INDEV: Filters
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center pb-16 md:pb-0">
             {guides.map((guide) => (
               <div
                 className="card w-60 md:w-80 shadow-inner shadow-primary"
