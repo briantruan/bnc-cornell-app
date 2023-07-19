@@ -19,9 +19,9 @@ export default function Guides({ guides = [] }) {
                         </h1>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center">
                         {guides.map((guide) => (
-                            <div className="card w-80 shadow-inner shadow-primary" key={guide._id}>
+                            <div className="card sm:w-60 w-80 shadow-inner shadow-primary" key={guide._id}>
                                 <div className="card-body">
                                     <h2 className="card-title">
                                         {guide.title}
