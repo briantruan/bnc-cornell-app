@@ -18,4 +18,4 @@ export const postPathsQuery = groq`*[_type == "post" && defined(slug.current)][]
 // Get announcement
 export const announcementQuery = groq`*[_type == "announcement"][0]{
   title, publshedAt, body
-}`
+}`;

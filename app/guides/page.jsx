@@ -3,11 +3,11 @@ import { cachedClient } from "@/sanity/lib/client";
 import { postsQuery } from "@/sanity/lib/queries";
 
 export const metadata = {
-    title: "Guides"
-}
+  title: "Guides",
+};
 
 export default async function GuidesPage() {
-    const response = await cachedClient(postsQuery)
+  const response = await cachedClient(postsQuery);
 
-    return <Guides guides={response} />
+  return <Guides guides={response} />;
 }
