@@ -9,7 +9,7 @@ This website was built using [Next.js](https://nextjs.org/) and deployed on [Ver
 
 To contribute, please fork with a relevant branch name and submit a pull request detailing the edits. **Your branch must pass Vercel tests to be considered for merge.**
 
-## Versioning (current: 0.2.0)
+## Versioning (current: 0.2.1)
 
 MAJOR.MINOR.PATCH; add the (e) tag to the end of a patch if it was an emergency.
 
