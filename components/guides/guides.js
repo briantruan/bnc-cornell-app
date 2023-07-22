@@ -5,7 +5,7 @@ import { CategoryBadge } from "../badges/badgeHandler";
 export default function Guides({ guides = [] }) {
   // Set date to check if add updated badge
   const date = new Date();
-  date.setDate(date.getDate() + 7);
+  date.setDate(date.getDate() - 7);
 
   return (
     <main>
@@ -14,7 +14,7 @@ export default function Guides({ guides = [] }) {
         style={{ backgroundImage: "url(/background.jpeg)" }}
       >
         <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content px-8 flex flex-col items-start">
+        <div className="hero-content container px-8 flex flex-col items-start">
           <div>
             <h1 className="text-4xl uppercase font-bold">Guides</h1>
           </div>
@@ -32,27 +32,27 @@ export default function Guides({ guides = [] }) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-center pb-16 md:pb-0">
+          <div className="container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-4 pb-20 lg:pb-0">
             {guides.map((guide) => (
               <div
-                className="card w-60 md:w-80 shadow-inner shadow-primary"
+                className="card w-80 h-40 shadow-inner shadow-primary"
                 key={guide._id}
               >
-                <div className="card-body">
-                  <h2 className="card-title">
+                <div className="card-body justify-between">
+                  <h2 className="card-title justify-between items-start">
                     {guide.title}
 
-                    {/* Place CATEGORY badge */}
-                    <CategoryBadge category={guide.category} />
+                    <div className="flex flex-row gap-2">
 
-                    {/* Place UPDATED badge if less than a week*/}
-                    {date >= new Date(guide.publishedAt) ? (
-                      <UpdatedBadge
-                        options={`Last updated: ${new Date(
-                          guide.publishedAt
-                        ).toDateString()}`}
-                      />
-                    ) : null}
+                      {/* Place UPDATED badge if less than a week*/}
+                      {date <= new Date(guide.publishedAt) ? (
+                        <UpdatedBadge options={"Updated"} />
+                      ) : null}
+                      
+                      {/* Place CATEGORY badge */}
+                      <CategoryBadge category={guide.category} />
+
+                    </div>
                   </h2>
                   <div className="card-actions justify-start">
                     <Link

@@ -45,7 +45,7 @@ export default function Guide({ guide }) {
         <main>
             <div className="hero min-h-screen w-full" style={{ backgroundImage: "url(/background.jpeg)" }} >
                 <div className="hero-overlay bg-opacity-75"></div>
-                <div className="hero-content px-8 pb-20 md:pb-0 flex-col lg:flex-row lg:space-x-4">
+                <div className="hero-content px-8 pb-20 lg:pb-0 flex-col lg:flex-row lg:space-x-4">
                     <div className="flex flex-col items-center w-6/12">
                         <div>
                             {guide?.mainImage ? (
