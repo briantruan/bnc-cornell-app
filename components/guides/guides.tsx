@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { UpdatedBadge } from "../badges/badges";
 import { CategoryBadge } from "../badges/badgeHandler";
+import type { SanityDocument } from "@sanity/client"
 
-export default function Guides({ guides = [] }) {
+export default function Guides({ guides = [] }: { guides: SanityDocument[] }) {
   // Set date to check if add updated badge
   const date = new Date();
   date.setDate(date.getDate() - 7);

@@ -15,7 +15,7 @@ export async function generateStaticParams() {
   return guides;
 }
 
-export default async function Page({ params }) {
+export default async function Page({ params }: { params: any }) {
   const guide = await cachedClient(postQuery, params);
 
   return <Guide guide={guide} />;
