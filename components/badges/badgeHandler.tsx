@@ -7,7 +7,7 @@ import {
   TransportBadge,
 } from "./badges";
 
-export function CategoryBadge({ category }) {
+export function CategoryBadge({ category }: { category: string }) {
   switch (category) {
     case "Food Security":
       return <FoodBadge />;

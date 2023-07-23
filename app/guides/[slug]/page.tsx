@@ -3,6 +3,7 @@
 import Guide from "@/components/guides/guide";
 import { postPathsQuery, postQuery } from "@/sanity/lib/queries";
 import { cachedClient } from "@/sanity/lib/client";
+import { SanityDocument } from "@sanity/client";
 
 export const metadata = {
   title: "Guide Viewer",
@@ -15,8 +16,8 @@ export async function generateStaticParams() {
   return guides;
 }
 
-export default async function Page({ params }) {
-  const guide = await cachedClient(postQuery, params);
+export default async function Page({ params }: { params: any }) {
+  const guide = await cachedClient<SanityDocument>(postQuery, params);
 
   return <Guide guide={guide} />;
 }
