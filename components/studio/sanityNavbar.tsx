@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function StudioNavbar(props) {
+export default function StudioNavbar(props: any) {
   return (
     <div>
       <div className="flex items-center justify-between bg-base-100 text-primary font-bold p-4">

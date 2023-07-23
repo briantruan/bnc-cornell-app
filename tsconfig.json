@@ -23,6 +23,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "components/studio/sanityNavbar.jsx", "sanity/schemas/blockContent.js", "sanity/schemas/category.js", "sanity/schemas/announcement.js", "sanity/lib/queries.js"],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "components/studio/sanityNavbar.tsx", "sanity/schemas/blockContent.js", "sanity/schemas/category.js", "sanity/schemas/announcement.js", "sanity/lib/queries.js"],
   "exclude": ["node_modules"]
 }

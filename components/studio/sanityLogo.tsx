@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Logo(props) {
+export default function Logo(props: any) {
   const { renderDefault, title } = props;
 
   return (
