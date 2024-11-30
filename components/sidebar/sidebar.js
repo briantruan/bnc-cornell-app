@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import Loading from "@/app/loading";
 
 const instagram = "https://instagram.com/cornellbasicneeds";
-const slack = "https://basicneedscoalitionhq.slack.com/archives/C07Q8BBCU5T"
+const slack = "https://basicneedscoalitionhq.slack.com/archives/C07Q8BBCU5T";
 const copyright = "2024";
 
 export default function Sidebar({ children }) {
