@@ -4,6 +4,9 @@ import SidebarOption from "./sidebar-option";
 import { Suspense } from "react";
 import Loading from "@/app/loading";
 
+const instagram = "https://instagram.com/cornellbasicneeds";
+const slack = "https://basicneedscoalitionhq.slack.com/archives/C07Q8BBCU5T"
+
 export default function Sidebar({ children }) {
   return (
     <div className="drawer lg:drawer-open">
@@ -175,7 +178,7 @@ export default function Sidebar({ children }) {
               <div className="grid-flow-col gap-2 md:place-self-center md:justify-self-end">
                 <button className="btn btn-square">
                   <Link
-                    href="https://instagram.com/cornellbasicneeds"
+                    href={instagram}
                     target="_blank"
                   >
                     <svg
@@ -197,7 +200,10 @@ export default function Sidebar({ children }) {
                   </Link>
                 </button>
                 <button className="btn btn-square">
-                  <Link href="https://groupme.com" target="_blank">
+                  <Link 
+                    href={slack} 
+                    target="_blank"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"

@@ -19,20 +19,6 @@ export default function Guides({ guides = [] }: { guides: SanityDocument[] }) {
           <div>
             <h1 className="text-4xl uppercase font-bold">Guides</h1>
           </div>
-
-          <div>
-            <p>
-              During the pre-production release period, 1 - 2 new guides will be
-              released weekly.
-            </p>
-          </div>
-
-          <div>
-            <p>
-              Guides are now sorted by category, then by title. INDEV: Filters
-            </p>
-          </div>
-
           <div className="container grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-4 pb-20 lg:pb-0">
             {guides.map((guide) => (
               <div
