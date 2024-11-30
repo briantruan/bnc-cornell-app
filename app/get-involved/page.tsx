@@ -19,12 +19,11 @@ export default function GetInvolved() {
                 Get Involved
               </h1>
               <p className="py-4">
-                Follow us on Instagram and join our GroupMe chat for announcements by accessing the Sidebar. 
+                Follow us on Instagram and join our Slack for announcements by accessing the Sidebar. 
                 We offer &quot;pop-up shops&quot; around campus throughout the semesters for your basic needs!
               </p>
               <p className="py-4">
-                Our in-person meetings will resume in the Fall 2023 semester. Check our announcements for 
-                periodic updates as we get closer to the beginning of the school year.
+                Come to our meetings in Anabel Taylor Hall B27 on Thursdays at 4:30 PM!
               </p>
             </div>
           </div>
