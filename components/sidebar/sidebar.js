@@ -5,7 +5,8 @@ import { Suspense } from "react";
 import Loading from "@/app/loading";
 
 const instagram = "https://instagram.com/cornellbasicneeds";
-const slack = "https://basicneedscoalitionhq.slack.com/archives/C07Q8BBCU5T"
+const slack = "https://basicneedscoalitionhq.slack.com/archives/C07Q8BBCU5T";
+const copyright = "2024";
 
 export default function Sidebar({ children }) {
   return (
@@ -172,7 +173,7 @@ export default function Sidebar({ children }) {
             <footer className="footer items-center px-4 text-neutral-content">
               <div className="items-center grid-flow-col">
                 <p>
-                  © 2023 | <Link href={"/studio"}>Portal</Link>
+                  © {copyright} | <Link href={"/studio"}>Portal</Link>
                 </p>
               </div>
               <div className="grid-flow-col gap-2 md:place-self-center md:justify-self-end">
