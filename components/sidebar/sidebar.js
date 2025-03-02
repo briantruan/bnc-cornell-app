@@ -6,7 +6,7 @@ import Loading from "@/app/loading";
 
 const instagram = "https://instagram.com/cornellbasicneeds";
 const slack = "https://basicneedscoalitionhq.slack.com/archives/C07Q8BBCU5T";
-const copyright = "2024";
+const copyright = new Date().getFullYear();
 
 export default function Sidebar({ children }) {
   return (
